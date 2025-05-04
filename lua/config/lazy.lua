@@ -30,6 +30,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.mini-comment" },
 
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    { import = "lazyvim.plugins.extras.ui.indent-blankline" },
 
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
 
