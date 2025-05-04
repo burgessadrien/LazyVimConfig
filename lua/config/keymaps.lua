@@ -21,7 +21,3 @@ map("n", "<C-Left>", "<C-w><")
 map("n", "<C-Right>", "<C-w>>")
 map("n", "<C-Up>", "<C-w>+")
 map("n", "<C-Down>", "<C-w>-")
-
--- Tabs
-map("n", "<leader>0", "<CMD>tabprev<CR>")
-map("n", "<leader>9", "<CMD>tabnext<CR>")
