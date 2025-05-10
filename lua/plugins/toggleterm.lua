@@ -126,9 +126,10 @@ return {
           print("You must pass in a bash command!")
           return
         end
-        print(opts.args)
-
-        local term = require("toggleterm.terminal").Terminal:new({ cmd = opts.args })
+        local term = require("toggleterm.terminal").Terminal:new({
+          cmd = opts.args,
+          name = opts.args,
+        })
         term:spawn()
         term:toggle()
       end, {
