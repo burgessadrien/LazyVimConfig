@@ -1,7 +1,6 @@
 return {
   {
     "akinsho/toggleterm.nvim",
-    version = "^2.13.1",
     lazy = false,
     cmd = { "ToggleTerm" },
     build = ":ToggleTerm",
@@ -112,14 +111,6 @@ return {
         direction = "vertical" or "horizontal" or "float" or "window",
         close_on_exit = false,
         auto_scroll = true,
-      })
-      vim.api.nvim_create_user_command("TermNew", function()
-        local term = require("toggleterm.terminal").Terminal:new({})
-        term:spawn()
-        term:toggle()
-      end, {
-        bang = true,
-        desc = "Toggle a new terminal",
       })
       vim.api.nvim_create_user_command("TermCommand", function(opts)
         if not opts.args or string.len(opts.args) < 1 then
